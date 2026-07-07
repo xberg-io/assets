@@ -15,7 +15,7 @@ truth — reference these across READMEs, docs sites, and social channels.
 Per-package READMEs publish to npm/PyPI/crates, which do not resolve relative repo paths — use the
 jsdelivr CDN, pinned to a tag:
 
-```
+```text
 https://cdn.jsdelivr.net/gh/xberg-io/assets@v1/<path>
 ```
 
