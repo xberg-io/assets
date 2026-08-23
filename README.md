@@ -1,3 +1,5 @@
+<!-- rumdl-disable MD033 MD041 -->
+<!-- The responsive brand banner intentionally precedes the heading. -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="banner/readme-banner-dark.svg">
