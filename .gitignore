@@ -13,3 +13,16 @@ plugin/.ai-rulez/.generated-manifest.json
 .codex/plugins.json
 .cursor/
 .github/commands/
+
+# BEGIN ai-rulez (DO NOT EDIT - managed by ai-rulez)
+.agents/skills/
+.claude/agents/
+.claude/skills/
+.codex/agents/
+.mcp.json
+.opencode/agents/
+.opencode/commands/
+AGENTS.md
+CLAUDE.md
+opencode.json
+# END ai-rulez
