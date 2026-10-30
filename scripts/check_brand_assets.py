@@ -10,7 +10,7 @@ from pathlib import Path
 BRAND_DIRS = ("banner", "logo", "favicon", "social", "docs")
 MANIFEST = "favicon/site.webmanifest"
 SCRIPT_RE = re.compile(r"<script\b", re.IGNORECASE)
-EVENT_ATTR_RE = re.compile(r"\s(on[a-z]+)\s*=", re.IGNORECASE)
+EVENT_ATTR_RE = re.compile(r"[\s/](on[a-z]+)\s*=", re.IGNORECASE)
 
 
 class CheckError(Exception):

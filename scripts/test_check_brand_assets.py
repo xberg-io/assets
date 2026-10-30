@@ -62,6 +62,11 @@ def test_svg_with_event_attribute_is_rejected(tmp_path: Path) -> None:
     assert cba.svg_violations(tmp_path) == ["docs/b.svg: contains an on* event attribute (onLoad)"]
 
 
+def test_svg_with_slash_separated_event_attribute_is_rejected(tmp_path: Path) -> None:
+    write(tmp_path, "logo/c.svg", '<svg/onload="x()"/>')
+    assert cba.svg_violations(tmp_path) == ["logo/c.svg: contains an on* event attribute (onload)"]
+
+
 def test_svg_scan_requires_at_least_one_svg(tmp_path: Path) -> None:
     with pytest.raises(cba.CheckError, match="no SVG files"):
         cba.svg_violations(tmp_path)
