@@ -4,17 +4,17 @@
 version = 1
 ai_rulez_version = '5.9.2'
 scope = 'all'
-tree = 'sha256:3b2dd344e89da5c916562db2b1e3a20207088f97d06623b43b5506ab202a92ba'
+tree = 'sha256:8749803ee2cb89cde33cced7d9a3a7f96df1c5a456850646ffb5085434d29838'
 
 [[include]]
 name = 'xberg-core'
 source = 'https://github.com/xberg-io/agent-conventions.git'
 path = 'modules/core'
 ref = '^1'
-tag = 'v1.0.1'
-tag_object = '8463faebfc6f8a6dbb66285645887215e8a1f7f9'
-commit = '157c7fc83b88b48395de6351f8ac63e4cdb50348'
-digest = 'sha256:d49d6b37b798ae671405a4c8cc5dce9a44e2316341f7b3ff7cf0ce58061fc43d'
+tag = 'v1.3.1'
+tag_object = 'ddf05f44d55b752f763795e843ecf0c6e7e08394'
+commit = 'a8ed32b44b161605dbc8b934a417ff136178a980'
+digest = 'sha256:e812c49d68cfcb08b24a483d051947b27c9e111529a5e54e7a46051f3c1b0f9e'
 
 [[served]]
 name = 'agent-coordination'
@@ -99,12 +99,6 @@ name = 'task-runner'
 source = 'builtin://universal/token-efficiency/skills/task-runner/SKILL.md'
 commit = ''
 digest = 'sha256:c57056e3a74a261b3a9d47638726c7d1f64c76b255838b6aaa3e635f3ffa8618'
-
-[[served]]
-name = 'taskfile-structure'
-source = 'include:xberg-core/skills/taskfile-structure/SKILL.md'
-commit = '157c7fc83b88b48395de6351f8ac63e4cdb50348'
-digest = 'sha256:3e3dadd66907874e2fdff0641c2e4ac56d87532d5f2411122a2854aa87ef35d2'
 
 [[served]]
 name = 'tdd-workflow'
