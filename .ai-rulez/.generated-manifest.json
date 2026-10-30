@@ -1,6 +1,7 @@
 {
   "version": "1",
   "files": [
+    ".agents/skills/adr-authoring/SKILL.md",
     ".agents/skills/agent-coordination/SKILL.md",
     ".agents/skills/basemind-tools/SKILL.md",
     ".agents/skills/code-quality-standards/SKILL.md",
@@ -10,6 +11,8 @@
     ".agents/skills/incremental-approach/SKILL.md",
     ".agents/skills/iterate/SKILL.md",
     ".agents/skills/iterate/agents/openai.yaml",
+    ".agents/skills/mise-tasks/SKILL.md",
+    ".agents/skills/mise-toolchains/SKILL.md",
     ".agents/skills/owasp-quick-reference/SKILL.md",
     ".agents/skills/parallelize/SKILL.md",
     ".agents/skills/parallelize/agents/openai.yaml",
@@ -17,7 +20,6 @@
     ".agents/skills/release-workflow/SKILL.md",
     ".agents/skills/skill-authoring/SKILL.md",
     ".agents/skills/task-runner/SKILL.md",
-    ".agents/skills/taskfile-structure/SKILL.md",
     ".agents/skills/tdd-workflow/SKILL.md",
     ".agents/skills/testing-conventions/SKILL.md",
     ".agents/skills/verification-harness/SKILL.md",
@@ -26,6 +28,7 @@
     ".claude/agents/security-auditor.md",
     ".claude/agents/test-writer.md",
     ".claude/settings.json",
+    ".claude/skills/adr-authoring/SKILL.md",
     ".claude/skills/agent-coordination/SKILL.md",
     ".claude/skills/basemind-tools/SKILL.md",
     ".claude/skills/code-quality-standards/SKILL.md",
@@ -34,13 +37,14 @@
     ".claude/skills/error-handling/SKILL.md",
     ".claude/skills/incremental-approach/SKILL.md",
     ".claude/skills/iterate/SKILL.md",
+    ".claude/skills/mise-tasks/SKILL.md",
+    ".claude/skills/mise-toolchains/SKILL.md",
     ".claude/skills/owasp-quick-reference/SKILL.md",
     ".claude/skills/parallelize/SKILL.md",
     ".claude/skills/poly-lint-format/SKILL.md",
     ".claude/skills/release-workflow/SKILL.md",
     ".claude/skills/skill-authoring/SKILL.md",
     ".claude/skills/task-runner/SKILL.md",
-    ".claude/skills/taskfile-structure/SKILL.md",
     ".claude/skills/tdd-workflow/SKILL.md",
     ".claude/skills/testing-conventions/SKILL.md",
     ".claude/skills/verification-harness/SKILL.md",
@@ -48,6 +52,7 @@
     ".codex/agents/docs-writer.toml",
     ".codex/agents/security-auditor.toml",
     ".codex/agents/test-writer.toml",
+    ".codex/config.toml",
     ".mcp.json",
     ".opencode/agents/code-reviewer.md",
     ".opencode/agents/docs-writer.md",
@@ -61,13 +66,26 @@
   ],
   "merged": {
     ".claude/settings.json": [],
+    ".codex/config.toml": [],
     ".mcp.json": [],
     "opencode.json": []
   },
   "servers": {
+    ".codex/config.toml": [
+      [
+        "mcp_servers",
+        "ai-rulez"
+      ]
+    ],
     ".mcp.json": [
       [
         "mcpServers",
+        "ai-rulez"
+      ]
+    ],
+    "opencode.json": [
+      [
+        "mcp",
         "ai-rulez"
       ]
     ]
